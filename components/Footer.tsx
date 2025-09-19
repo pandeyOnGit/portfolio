@@ -44,7 +44,7 @@ const Footer = () => {
   const socialLinks = [
     { 
       icon: FaGithub, 
-      href: 'https://github.com/yourusername', 
+      href: 'https://github.com/pandeyOnGit', 
       label: 'GitHub',
       color: 'hover:text-gray-400',
       bgColor: 'hover:bg-gray-900',
@@ -52,7 +52,7 @@ const Footer = () => {
     },
     { 
       icon: FaLinkedin, 
-      href: 'https://linkedin.com/in/yourusername', 
+      href: 'https://linkedin.com/in/pandeyonsocial', 
       label: 'LinkedIn',
       color: 'hover:text-blue-400',
       bgColor: 'hover:bg-blue-600',
@@ -60,7 +60,7 @@ const Footer = () => {
     },
     { 
       icon: FaTwitter, 
-      href: 'https://twitter.com/yourusername', 
+      href: 'https://twitter.com/_onetruegod', 
       label: 'Twitter',
       color: 'hover:text-cyan-400',
       bgColor: 'hover:bg-cyan-500',
@@ -68,7 +68,7 @@ const Footer = () => {
     },
     { 
       icon: FaInstagram, 
-      href: 'https://instagram.com/yourusername', 
+      href: 'https://instagram.com/pandeyScripted', 
       label: 'Instagram',
       color: 'hover:text-pink-400',
       bgColor: 'hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500',
@@ -89,21 +89,21 @@ const Footer = () => {
     { 
       icon: Mail, 
       label: 'Email', 
-      value: 'john.doe@example.com', 
-      href: 'mailto:john.doe@example.com',
+      value: 'adityapandey4254@gmail.com', 
+      href: 'mailto:adityapandey4254@gmail.com',
       color: 'text-blue-400'
     },
     { 
       icon: Phone, 
       label: 'Phone', 
-      value: '+1 (555) 123-4567', 
-      href: 'tel:+15551234567',
+      value: '8368664323', 
+      href: 'tel:+918368664323',
       color: 'text-green-400'
     },
     { 
       icon: MapPin, 
       label: 'Location', 
-      value: 'San Francisco, CA', 
+      value: 'Greater Noida, India', 
       href: '#',
       color: 'text-purple-400'
     },
@@ -226,7 +226,7 @@ const Footer = () => {
                 transition={{ duration: 4, repeat: Infinity }}
                 className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent bg-[length:200%_100%] group-hover:from-cyan-400 group-hover:via-purple-400 group-hover:to-pink-400 transition-all duration-500"
               >
-                John Doe
+                Aditya Pandey
               </motion.span>
             </motion.div>
 

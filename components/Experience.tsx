@@ -31,64 +31,18 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: 'Senior Full Stack Developer',
-      company: 'Tech Innovations Inc.',
-      location: 'San Francisco, CA',
-      period: '2023 - Present',
-      description: 'Lead development of scalable web applications using React, Next.js, and Node.js. Mentor junior developers and collaborate with cross-functional teams.',
-      achievements: [
-        'Led a team of 5 developers to deliver 3 major projects',
-        'Improved application performance by 40% through optimization',
-        'Implemented CI/CD pipelines reducing deployment time by 60%',
-        'Mentored 8 junior developers in best practices'
-      ],
-      technologies: ['React', 'Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS'],
-      color: 'from-purple-500 to-pink-500'
-    },
-    {
-      title: 'Full Stack Developer',
-      company: 'StartupXYZ',
-      location: 'New York, NY',
-      period: '2022 - 2023',
-      description: 'Developed and maintained multiple client projects using modern web technologies. Collaborated with designers and product managers.',
-      achievements: [
-        'Built 5+ full-stack applications from scratch',
-        'Integrated third-party APIs and payment systems',
-        'Reduced page load times by 50% through optimization',
-        'Implemented responsive designs for mobile compatibility'
-      ],
-      technologies: ['React', 'Express.js', 'MongoDB', 'Socket.io', 'Stripe API'],
-      color: 'from-blue-500 to-cyan-500'
-    },
-    {
-      title: 'Frontend Developer',
-      company: 'Digital Solutions Ltd.',
+      title: 'Software Development Engineer',
+      company: 'StuFlo pvt ltd.',
       location: 'Remote',
-      period: '2021 - 2022',
-      description: 'Focused on creating interactive user interfaces and improving user experience. Worked closely with UX/UI designers.',
+      period: '2023 - Present',
+      description: 'Lead development of scalable web applications using React, Next.js, and Node.js.',
       achievements: [
-        'Converted 10+ Figma designs to responsive React components',
-        'Improved user engagement by 35% through UX enhancements',
-        'Established component library used across 5 projects',
-        'Collaborated with backend team to integrate RESTful APIs'
+        'Integrated secure authentication protocols (OAuth 2.0) into the flagship application, increasing user security audit scores by 40% and reducing unauthorized access attempts by 25%',
+        'Developed and refined RESTful APIs using Next.js, reducing average data retrieval time by 35% and supporting over 1,000 concurrent users with zero downtime during peak usage',
+        'Redesigned MySQL queries and indexing strategies, cutting average API response time from 1.8s to 1.2s (a 35% improvement) and improving performance reliability under load testing by 45%',
       ],
-      technologies: ['React', 'JavaScript', 'Sass', 'REST APIs', 'Figma'],
-      color: 'from-green-500 to-teal-500'
-    },
-    {
-      title: 'Junior Web Developer',
-      company: 'Web Agency Pro',
-      location: 'Boston, MA',
-      period: '2020 - 2021',
-      description: 'Started professional journey building websites and learning modern web development practices.',
-      achievements: [
-        'Developed 15+ responsive websites for various clients',
-        'Learned and implemented modern JavaScript frameworks',
-        'Assisted in database design and API development',
-        'Participated in agile development processes'
-      ],
-      technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'WordPress'],
-      color: 'from-orange-500 to-red-500'
+      technologies: ['React', 'Next.js', 'TypeScript', 'Node.js', 'PostgreSQL','Tailwind CSS'],
+      color: 'from-purple-500 to-pink-500'
     }
   ]
 
@@ -200,19 +154,19 @@ const Experience = () => {
                     transition={{ duration: 0.8 }}
                   >
                     <CardTitle className="text-xl md:text-2xl text-primary group-hover:text-purple-400 transition-colors duration-300">
-                      Bachelor of Science in Computer Science
+                      Bachelor of Technology in Computer Science
                     </CardTitle>
                     <CardDescription className="text-lg font-semibold text-foreground mt-2">
-                      University of Technology
+                      Guru Gobind Singh Indraprastha University
                     </CardDescription>
                     <div className="flex flex-col sm:flex-row gap-2 text-sm text-muted-foreground mt-3">
                       <div className="flex items-center">
                         <CalendarDays className="h-4 w-4 mr-1" />
-                        2016 - 2020
+                        2022 - 2026
                       </div>
                       <div className="flex items-center">
                         <MapPin className="h-4 w-4 mr-1" />
-                        Boston, MA
+                        Greater Noida, India
                       </div>
                     </div>
                   </motion.div>

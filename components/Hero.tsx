@@ -50,23 +50,9 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background with Morphing Blobs */}
       <div className="absolute inset-0 -z-10">
-        {/* Gradient Background with Color Shifts */}
-        <motion.div 
-          animate={{
-            background: [
-              "linear-gradient(45deg, #667eea 0%, #764ba2 100%)",
-              "linear-gradient(45deg, #f093fb 0%, #f5576c 100%)",
-              "linear-gradient(45deg, #4facfe 0%, #00f2fe 100%)",
-              "linear-gradient(45deg, #43e97b 0%, #38f9d7 100%)",
-              "linear-gradient(45deg, #667eea 0%, #764ba2 100%)",
-            ]
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            repeatType: "reverse"
-          }}
-          className="absolute inset-0 opacity-10"
+        {/* Static Gradient Background */}
+        <div 
+          className="absolute inset-0 opacity-10 bg-gradient-to-br from-purple-500 via-pink-500 to-cyan-500"
         />
 
         {/* Morphing Gradient Blobs */}
@@ -138,25 +124,16 @@ const Hero = () => {
             Hello, I&apos;m
           </motion.p>
 
-          {/* ✅ Your Name */}
+          {/* ✅ Your Name - Removed glowing effect */}
           <motion.h1
             initial={{ opacity: 0, y: 50, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ type: "spring", stiffness: 300, damping: 10, delay: 0.3 }}
             className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6"
           >
-            <motion.span
-              animate={{
-                textShadow: [
-                  "0 0 20px #667eea, 0 0 40px #667eea",
-                  "0 0 20px #f093fb, 0 0 40px #f093fb"
-                ]
-              }}
-              transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
-              className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent"
-            >
+            <span className="bg-gradient-to-r from-purple-600  to-cyan-600 bg-clip-text text-transparent">
               Aditya Pandey
-            </motion.span>
+            </span>
           </motion.h1>
 
           {/* Profession Typing Effect */}
@@ -185,28 +162,28 @@ const Hero = () => {
             using modern technologies and best practices.
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons - Removed glow effects */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.4 }}
             className="flex flex-col sm:flex-row gap-6 justify-center mb-16"
           >
-            <motion.div whileHover={{ scale: 1.05, rotateY: 5, rotateX: 5 }} whileTap={{ scale: 0.95 }}>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"
-                className="text-lg px-8 py-6 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-2xl hover:shadow-purple-500/25"
+                className="text-lg px-8 py-6 bg-gradient-to-r from-purple-600 hover:from-purple-700 hover:to-pink-700 transition-all duration-300 shadow-lg"
                 onClick={() => window.open('/resume.pdf', '_blank')}
               >
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </Button>
             </motion.div>
-            <motion.div whileHover={{ scale: 1.05, rotateY: -5, rotateX: -5 }} whileTap={{ scale: 0.95 }}>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 variant="outline"
                 size="lg"
-                className="text-lg px-8 py-6 border-2 border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-2xl hover:shadow-primary/25"
+                className="text-lg px-8 py-6 border-2 border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-lg"
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Get In Touch
@@ -214,7 +191,7 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* ✅ Social Links */}
+          {/* ✅ Social Links - Removed complex animations */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -229,12 +206,12 @@ const Hero = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  initial={{ opacity: 0, scale: 0, rotate: -180 }}
-                  animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: 1.8 + index * 0.1, type: "spring", stiffness: 200 }}
-                  whileHover={{ scale: 1.3, y: -10, rotate: [0, -10, 10, -10, 0] }}
+                  whileHover={{ scale: 1.1, y: -5 }}
                   whileTap={{ scale: 0.9 }}
-                  className={`p-4 rounded-xl bg-secondary/50 backdrop-blur-sm border border-primary/20 text-muted-foreground transition-all duration-300 ${social.color} shadow-lg hover:shadow-2xl`}
+                  className={`p-4 rounded-xl bg-secondary/50 backdrop-blur-sm border border-primary/20 text-muted-foreground transition-all duration-300 ${social.color} shadow-lg hover:shadow-xl`}
                 >
                   <Icon className="h-6 w-6" />
                 </motion.a>
@@ -243,7 +220,7 @@ const Hero = () => {
           </motion.div>
         </motion.div>
 
-        {/* Scroll Indicator */}
+        {/* Scroll Indicator - Removed glow effect */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -252,9 +229,9 @@ const Hero = () => {
         >
           <motion.button
             onClick={scrollToAbout}
-            animate={{ y: [0, 15, 0], scale: [1, 1.1, 1] }}
+            animate={{ y: [0, 15, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            whileHover={{ scale: 1.2, boxShadow: "0 0 20px rgba(99, 102, 241, 0.5)" }}
+            whileHover={{ scale: 1.1 }}
             className="p-3 rounded-full bg-primary/10 backdrop-blur-sm border border-primary/30 hover:bg-primary group transition-all duration-300"
           >
             <ChevronDown className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
@@ -265,4 +242,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
