@@ -443,7 +443,7 @@ const Footer = () => {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent bg-[length:200%_100%] font-semibold"
               >
-                John Doe
+                Aditya Pandey
               </motion.span>
               . All rights reserved.
             </motion.p>

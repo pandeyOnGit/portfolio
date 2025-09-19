@@ -19,7 +19,8 @@ import {
   SiAmazonaws,
   SiVercel,
   SiFigma,
-  SiGraphql
+  SiGraphql,
+  SiJenkins
 } from 'react-icons/si'
 
 // TypeScript interfaces
@@ -69,7 +70,7 @@ const Skills = () => {
         { name: 'Docker', icon: SiDocker, color: 'text-blue-500', bgColor: 'hover:bg-blue-500/20' },
         { name: 'AWS', icon: SiAmazonaws, color: 'text-orange-600', bgColor: 'hover:bg-orange-600/20' },
         { name: 'Vercel', icon: SiVercel, color: 'text-black dark:text-white', bgColor: 'hover:bg-gray-500/20' },
-        { name: 'Figma', icon: SiFigma, color: 'text-purple-500', bgColor: 'hover:bg-purple-500/20' },
+        { name: 'Jenkins', icon: SiJenkins, color: 'text-purple-500', bgColor: 'hover:bg-purple-500/20' },
       ]
     }
   ]
